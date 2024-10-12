@@ -1,0 +1,11 @@
+components: ["filetree", "shell", "console"]
+run_command: "cd xxl-job-admin && mvn spring-boot:run"
+debug:
+  compile: mvn clean compile && mvn dependency:copy-dependencies
+  launch:
+    mainClass: com.xxl.job.admin.XxlJobAdminApplication  // 入口类
+    classPaths: ["xxl-job-admin/target/classes","xxl-job-admin/target/dependency/*","lib/*"]
+    cwd: xxl-job-admin
+    console: integratedTerminal
+    internalConsoleOptions: neverOpen
+  support: false
