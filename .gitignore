@@ -1,0 +1,26 @@
+# Clacky-related configuration
+.1024*
+!.1024
+
+# Language-specific files
+*.class
+*.jar
+*.war
+*.log
+
+# Framework-related files
+/target/
+**/temp/
+
+# Package manager directories
+/node_modules/
+/vendor/
+
+# Others
+.DS_Store
+Thumbs.db
+
+xxl-job-admin/target/
+xxl-job-core/target/
+xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/
+xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/
